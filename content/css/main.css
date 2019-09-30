@@ -1,0 +1,259 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 80%;
+    margin: 10px auto;
+    
+}
+
+.section-1 img{
+    width: 100%;
+}
+
+.section-2 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    font-weight: 100;
+    font-size: 4.5vw;
+    color: #c80000;
+}
+
+.section-1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.section-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.section-3 article{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 40px 0;
+    grid-gap: 10px;
+}
+
+.section-1 h3{
+    color: #c80000;
+}
+
+.section-2 h3{
+    color: #c80000;
+}
+
+.section-3 h3{
+    color: #c80000;
+    margin: 0;
+}
+
+.section-3 img{
+    width: 100%;
+}
+
+.section-3 p{
+    margin: 0;
+}
+
+.section-1 footer{
+    color: #c80000;
+    text-align: right;
+    cursor: pointer;
+}
+
+.section-2 footer{
+    color: #c80000;
+    text-align: right;
+    cursor: pointer;
+}
+
+.skullbreaker{
+    display: block;
+    width: 20%;
+    margin: 30px auto 80px auto;
+}
+
+
+/*footeren*/
+.section-form{
+    background-color: #333333;
+}
+
+.form{
+    width: 80%;
+    margin: 200px auto 0 auto;
+    padding: 20px 0;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 41% 59%;
+    grid-gap: 20px;
+}
+
+input[type=text]{
+    background-color: #444444;
+    color: #888888;
+    border: solid 3px #888888;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    margin: 0 0 15px 0;
+    height: 60px;
+}
+
+input[type=password]{
+    background-color: #444444;
+    color: #888888;
+    border: solid 3px #888888;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    margin: 15px 0;
+    height: 60px;
+}
+
+#cancel{
+    margin: 15px 0;
+    color: #d4d4d4;
+    background-color: #771919;
+    font-size: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 3px #888888 solid;
+}
+
+#send{
+    margin: 15px 0;
+    color: #d4d4d4;
+    background-color: #297719;
+    font-size: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 3px #888888 solid;
+}
+
+.footerbnd{
+    width: 90%;
+}
+
+.submit{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+
+/*Media query*/
+@media only screen and (max-width: 1200px) {
+    /*.title{
+        font-size: 3vw;
+    }*/
+}
+@media only screen and (max-width: 1000px) {
+    main{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .title{
+        font-size: 5.2vw;
+    }
+
+    .section-1{
+        grid-template-columns: repeat(2, 1fr);
+    }
+        .section-1 footer{
+            margin-bottom: 30px;
+        }
+}
+
+@media only screen and (max-width: 768px) {
+    main{
+        width: 90%
+    }
+
+    .headerbnd{
+        display: none;
+    }
+
+    .title{
+        font-size: 8vw;
+    }
+    .section-1{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+        .section-1 h3{
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .section-1 footer{
+            margin-bottom: 20px;
+        }
+
+    .section-2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+        .section-2 h3{
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+    .section-form{
+        width: 100%;
+    }
+
+        .form{
+            margin: 0;
+            padding: 2vw;
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+            form{
+                grid-template-columns: 1fr;
+            }
+
+        .footerbnd{
+            display: none;
+        }
+
+    .section-3 article{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr); 
+    }
+
+        .area1{
+            grid-row: 1/2;
+        }
+
+        .area2{
+            grid-row: 2/3 ;
+            margin-bottom: 50px;
+        }
+
+        .area3{
+            grid-row: 3/4;
+        }
+
+        .area4{
+            grid-row: 4/5;
+        }
+
+}

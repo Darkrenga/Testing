@@ -1,0 +1,56 @@
+nav{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #333333;
+}
+
+nav ul{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    color: white;
+    padding: 15px 10px;
+}
+
+nav ul li a{
+    height: 100%;
+    color: white;
+    text-decoration: none;
+
+}
+
+nav ul li a:visited{
+    color:white;
+}
+
+nav img{
+    height: 51px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+.current-page{
+    background-color: #a50000;
+}
+
+/*Media query*/
+@media only screen and (max-width: 1000px) {
+    nav ul{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+    }
+}
